@@ -1,0 +1,5 @@
+# Ignore any the folder, and files inside these folders:
+node_modules/
+
+# Ignore any txt files starting with test:
+test*.txt

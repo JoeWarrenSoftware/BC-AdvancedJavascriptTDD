@@ -22,3 +22,6 @@ const students = [
 
 const [alice, bob, charlie] = students;
 console.log(alice, bob, charlie); // { name: 'Alice', age: 20 } { name: 'Bob', age: 21 } { name: 'Charlie', age: 22 }
+
+const [first, second, third] = students;
+console.log(first, second, third);

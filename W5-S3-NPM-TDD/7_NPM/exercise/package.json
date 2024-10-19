@@ -1,0 +1,15 @@
+{
+  "name": "exercise",
+  "description": "In this exercise, you will create a simple Node.js application that uses the **figlet** package (a tool for creating text banners). The steps involved are:",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "figlet": "^1.8.0"
+  }
+}

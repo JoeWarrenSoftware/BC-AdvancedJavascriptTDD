@@ -28,10 +28,12 @@ function onfetchRepos() {
 
 const renderRepos = (repos) => {
   // this loops through the data and logs the name of each repository
-  data.forEach((repo) => {
+  repos.forEach((repo) => {
     // this logs the name of each repository
-    //console.log(repo.name);
+    console.log(repo.name);
     //TODO: log out the full name of each repository and whether it is a private or public repository
+    console.log(`Repo Name is ${repo.full_name} - Repo Access is ${(repo.private == "true" ? "Private" : "Public")}`)
     //TODO: print out Avatar URL and login of the owner
+    console.log(`Login Owner is ${repo.owner.login} - Avatar is ${repo.owner.avatar_url}`)
   });
 };

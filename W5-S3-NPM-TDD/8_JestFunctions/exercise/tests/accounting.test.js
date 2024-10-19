@@ -10,11 +10,11 @@ describe("VAT Calculator", () => {
     });
 
     test("should calculate the gross amount with custom VAT percentage", () => {
-      expect(calculateGross(100, 0.11)).toBe(110); // 100 + 100 * 0.1 = 110
+      expect(calculateGross(100, 0.1)).toBe(110); // 100 + 100 * 0.1 = 110
     });
 
     test("should throw an error if amount is not a number", () => {
-      expect(() => calculateGross("100", 0.2)).toThrow("Numbers are invalid");
+      expect(() => calculateGross("100", 0.2)).toThrow("Both amount and vatPercentage must be numbers");
     });
 
     test("should throw an error if vatPercentage is not a number", () => {
@@ -27,7 +27,7 @@ describe("VAT Calculator", () => {
   // Test cases for calculateNet function
   describe("calculateNet", () => {
     test("should calculate the net amount with default VAT (20%)", () => {
-      expect(calculateNet(120)).toBe(120); // 120 / (1 + 0.2) = 100
+      expect(calculateNet(120)).toBe(100); // 120 / (1 + 0.2) = 100
     });
 
     test("should calculate the net amount with custom VAT percentage", () => {

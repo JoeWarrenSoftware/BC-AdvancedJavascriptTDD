@@ -33,6 +33,9 @@ const renderRepos = (repos) => {
   let html = "";
 
   //TODO what does this line do?
+
+  // Appends a long string of HTML text, one for every repo found in the array/collection
+
   repos.forEach((repo) => {
     const repoFullName = repo.full_name;
 
@@ -46,6 +49,11 @@ const renderRepos2 = (repos) => {
   const reposListEl = document.getElementById("repos2");
 
   //TODO what does this line do?
+
+  // Loops through an array containing every repo found and then systematically creates a new LI element for 
+  // each one and then fills in the text content property of the element using the repo's name.
+
+
   for (let i = 0; i < repos.length; i++) {
     const repoFullName = repos[i].full_name;
 
@@ -59,5 +67,8 @@ const renderRepos3 = (repos) => {
   const reposListEl = document.getElementById("repos3");
 
   // TODO: what does this line do?
+
+  // Concat some HTML to the node for every repo found
+
   repos.map((repo) => (reposListEl.innerHTML += `<li>${repo.full_name}</li>`));
 };

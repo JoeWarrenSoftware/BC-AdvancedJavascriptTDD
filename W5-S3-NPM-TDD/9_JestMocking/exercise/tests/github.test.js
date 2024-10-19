@@ -3,6 +3,9 @@ const axios = require("axios");
 const { getUserRepos } = require("../github");
 
 // TODO: what's the difference between jest.mock and jest.spyOn?
+// Answer: jest.mock is used to emulate the entire module and is used where you want to override the behaviour of the dependences are running long/network requests
+// jest.spyOn is where you want to mock a specific function only, instead of the entire module
+
 // Mock Axios
 jest.mock("axios");
 

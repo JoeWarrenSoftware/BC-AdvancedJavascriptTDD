@@ -15,3 +15,6 @@ const sum = (a, b) => a + b; // Arrow function
 const nums = [1, 2, 3, 4];
 const squares = nums.map((n) => n * n); // Cleaner syntax for map
 console.log(squares); // [1, 4, 9, 16]
+
+const doubled = nums.map((n) => n*2);
+console.log(doubled);

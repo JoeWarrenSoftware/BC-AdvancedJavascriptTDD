@@ -1,11 +1,12 @@
 /*
-// Using var (function-scoped)
+// Using var (function-scoped or global-scope)
 var message = "Hello, World!";
 if (true) {
   var message = "Hello from block!";
 }
 console.log(message); // "Hello from block!" (var is not block-scoped)
 */
+
 
 // Using let (block-scoped)
 let message = "Hello, World!";

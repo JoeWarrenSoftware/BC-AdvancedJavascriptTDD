@@ -6,7 +6,7 @@ function calculateGross(amount, vatPercentage = 0.2) {
     throw new Error("Both amount and vatPercentage must be numbers");
   }
 
-  return amount + amount * vatPercentage;
+  return amount + (amount * vatPercentage);
 }
 
 function calculateNet(amount, vatPercentage = 0.2) {
